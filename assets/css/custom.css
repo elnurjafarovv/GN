@@ -1,0 +1,1421 @@
+.switcher-menu .form-switch.form-check-custom .form-check-input{
+    height: 24px;
+    pointer-events: none;
+}
+
+.switcher-menu .form-switch.form-check-solid .form-check-input:not(:checked){
+    background-color: grey;
+}
+
+.switcher-menu{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+}
+
+.header-btns{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    justify-content: flex-end;
+}
+
+.banner-cards{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1px;
+    margin-top: 40px;
+}
+
+.banner-cards .square {
+    width: calc((100% - 2px) / 3);
+    padding: 16px;
+}
+
+.banner-cards .square div{
+    justify-content: center;
+}
+
+.phone-animation[data-v-73c3fb79],.phone-anivation__wrapper[data-v-73c3fb79] {
+    position: relative
+}
+
+.phone-animation[data-v-73c3fb79] {
+    border-radius: 62px;
+    flex-shrink: 0;
+    height: 700px;
+    margin-right: 113px;
+    overflow: hidden;
+    width: 341px
+}
+
+@media (max-width: 1279px) {
+    .phone-animation[data-v-73c3fb79] {
+        height:571px;
+        margin-right: 0;
+        width: 280px
+    }
+}
+
+@media (max-width: 799px) {
+    .phone-animation[data-v-73c3fb79] {
+        border-radius:40px;
+        height: 471px;
+        width: 231px
+    }
+}
+
+.phone-animation__video[data-v-73c3fb79] {
+    height: 79%;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-53%);
+    width: 100%;
+    z-index: 1
+}
+
+.phone-animation__overlay[data-v-73c3fb79] {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2
+}
+
+.phone-animation__shadow[data-v-73c3fb79] {
+    height: 664px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translate(50%) translateY(-5%);
+    width: 338px
+}
+
+.phone-animation__shadow[data-v-73c3fb79]:before {
+    background: #0f87f0;
+    content: "";
+    filter: blur(125px);
+    height: 60%;
+    left: 50%;
+    opacity: .25;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%) translateY(-50%);
+    width: 50%
+}
+
+
+
+
+.banner-media{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner-container{
+    padding-top: 40px;
+}
+
+.hit-tabs .nav-line-tabs{
+    display: flex;
+    justify-content: center;
+    border-bottom: 0;
+}
+
+.hit-tabs .nav-line-tabs .nav-link{
+    opacity: .7;
+}
+.hit-tabs .nav-line-tabs .nav-link.active{
+    opacity: 1;
+}
+
+.hit-tabs{
+
+    margin: 50px auto;
+}
+
+.hit-tabs .tab-content{
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.11);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.11);
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.11);
+padding: 30px;
+border-radius: 20px;
+max-width: 1100px;
+margin: 40px auto;
+margin-bottom: 80px;
+}
+.page .last_minute_offers {
+
+    -webkit-border-radius: 0 0 60px 60px;
+    border-radius: 0 0 60px 60px
+}
+
+.page .last_minute_offers .mw {
+    
+}
+
+.page .last_minute_offers .mw .top_cont {
+    position: relative;
+    margin-bottom: 70px
+}
+
+.page .last_minute_offers .mw .top_cont .m_title .h3 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 136.88%;
+    color: #fff
+}
+
+.page .last_minute_offers .mw .top_cont .m_title .h3 b {
+    color: #fff;
+    background: #EB5757;
+    padding: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    line-height: 100%;
+    padding-top: 0;
+    margin-left: -6px;
+    padding-right: 40px;
+    display: inline-block
+}
+
+.page .last_minute_offers .mw .top_cont .now_active_offer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.page .last_minute_offers .mw .top_cont .now_active_offer p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #fff
+}
+
+.page .last_minute_offers .mw .top_cont .now_active_offer .num {
+    width: 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: center;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #fff;
+    z-index: 2;
+    position: relative
+}
+
+.page .last_minute_offers .mw .top_cont .now_active_offer .num:after {
+    content: '';
+    background: url("/assets/home/fire-2f4d8e261ef77985224f95502dab6763e548f555d79ca52213c15a69b43a3a74.svg") no-repeat center center/100% 100%;
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    top: -35px;
+    z-index: -1
+}
+
+.page .last_minute_offers .mw .cont {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block {
+    background: #fff;
+    -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: space-between;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-right: 30px;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info {
+    padding: 30px 20px;
+    background: #F2F5FD;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 450px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img {
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    min-width: 60px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img img {
+    width: 100%;
+    height: 100%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .channel_avatar_link {
+    position: relative
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .channel_avatar_link img.private_channel {
+    position: absolute;
+    top: -10px;
+    right: 25px;
+    width: 25px !important;
+    height: 25px !important
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .channel_avatar_link img.chat_channel {
+    position: absolute;
+    top: -10px;
+    left: 30px;
+    width: 20px !important;
+    height: 20px !important
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .channel_avatar_link img.exclusive {
+    position: absolute;
+    left: -10px;
+    top: -10px;
+    right: 25px;
+    width: 25px !important;
+    height: 25px !important
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .channel_avatar_link .channel_icons {
+    display: none !important
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .star {
+    position: absolute;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: -2px;
+    color: #111;
+    font-size: 10px;
+    z-index: 2
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .img .star:after {
+    content: '';
+    width: 24px;
+    height: 24px;
+    background: url("https://telega.in/assets/home/star-fac8fbd750eb4c1a5cfe5acb73cb562f1d98d17263aefb297c25b544ee76a43f.svg") no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    margin-top: -2px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .name {
+    margin-right: 40px;
+    width: 160px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .name p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: #657790;
+    opacity: 0.6;
+    padding-bottom: 8px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-word
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info .name b {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    color: #111
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info ul li {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 6px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info ul li:last-child {
+    padding-bottom: 0
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info ul li b {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 130%;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #111;
+    margin-right: 3px;
+    min-width: 40px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .channel_info ul li span {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: #657790;
+    opacity: 0.6
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont {
+    padding: 0 30px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .accommodation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 28px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .accommodation p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: #657790;
+    opacity: 0.6;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .accommodation p:last-child {
+    margin-right: 0
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .accommodation b {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #111;
+    margin-right: 20px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: #657790;
+    opacity: 0.6;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format p:last-child {
+    margin-right: 0
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format .info {
+    margin-right: 25px;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format .info:hover {
+    opacity: 1
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format .info:hover .hidden_info {
+    visibility: visible;
+    z-index: 2;
+    opacity: 1
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format .info img {
+    opacity: 0.4;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 14px;
+    height: 14px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format .info .hidden_info {
+    position: absolute;
+    font-style: normal;
+    top: 20px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    color: rgba(101,119,145,0.6);
+    width: 200px;
+    background-color: #fff;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    padding: 10px;
+    -webkit-box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .center_cont .format b {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 130%;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #111;
+    margin-right: 20px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    min-width: 330px;
+    border-left: 1px solid #EAEFFC;
+    height: 100%;
+    min-height: 120px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .price {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: flex-end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: flex-end;
+    justify-content: flex-end;
+    -webkit-box-align: flex-end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: flex-end;
+    align-items: flex-end
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .price .h5 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 130%;
+    text-align: right;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #111;
+    padding-bottom: 3px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .price .old_price {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 130%;
+    text-align: right;
+    -webkit-text-decoration-line: line-through;
+    text-decoration-line: line-through;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #657790;
+    opacity: 0.6
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .price .discount {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 80%;
+    text-align: center;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #fff;
+    background: #EB5757;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    padding: 6px;
+    margin-top: 8px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line {
+    margin-left: 30px
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .btn_c {
+    width: 100%
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .btn_c .btn_m {
+    font-size: 16px;
+    line-height: 130%;
+    background-color: #13263c
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .btn_c .btn_m:after {
+    background-color: #FBB040
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .btn_c .btn_m:hover {
+    color: #fff
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .until_the_end {
+    margin-top: 13px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: flex-start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: flex-start;
+    justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .until_the_end p {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: left;
+    -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #EB5757
+}
+
+.page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .until_the_end .time {
+    font-size: 24px;
+    line-height: 130%;
+    padding-left: 4px
+}
+
+.page .last_minute_offers .mw .cont .hidden_offers {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    display: none;
+    width: 100%
+}
+
+.page .last_minute_offers .mw .cont .btn_b {
+    width: 100%
+}
+
+.page .last_minute_offers .mw .cont .btn_load_more {
+    margin: 25px auto 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 130%;
+    text-align: center;
+    color: #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent;
+    border-bottom: 1px dashed #FFFFFF
+}
+
+.page .last_minute_offers .mw .cont .btn_load_more:hover {
+    color: #FBB040;
+    border-bottom-color: #FBB040
+}
+
+.page .last_minute_offers .mw .btn_view_all_offers {
+    width: 100%
+}
+.btn_c .btn_m {
+    min-width: 160px;
+    height: 56px;
+    background: #325FEB;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    padding: 0px 10px;
+}
+
+.page .last_minute_offers .mw .btn_view_all_offers .btn_m {
+    background-color: #FBB040;
+    max-width: 360px;
+    margin: 0 auto;
+    width: 100%
+}
+
+.page .last_minute_offers .mw .btn_view_all_offers .btn_m:hover {
+    color: #111
+}
+
+.page .last_minute_offers .mw .btn_view_all_offers .btn_m:after {
+    background-color: #fff
+}
+@media(max-width:991px){
+    .banner-media{
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .phone-animation__shadow[data-v-73c3fb79] {
+        height:571px;
+        width: 280px
+    }
+}
+
+@media (max-width: 799px) {
+    .phone-animation__shadow[data-v-73c3fb79] {
+        height:471px;
+        width: 231px
+    }
+}
+
+@media(max-width:768px){
+    .banner-cards .square .ki-duotone{
+        display: none;
+    }
+    .banner-cards{
+        row-gap: 1px;
+    }
+    .banner-cards .square{
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px){
+    .page .last_minute_offers {
+        -webkit-border-radius: 0 0 40px 40px;
+        border-radius: 0 0 40px 40px
+    }
+
+
+    .page .last_minute_offers .mw .top_cont {
+        margin-bottom: 50px;
+        
+    }
+
+    .page .last_minute_offers .mw .top_cont .m_title .h3 {
+        font-size: 35px
+    }
+
+    .page .last_minute_offers .mw .top_cont .m_title .h3 b {
+        padding-right: 6px;
+        display: inline-block
+    }
+
+    .page .last_minute_offers .mw .top_cont .now_active_offer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: flex-end;
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: flex-end;
+        justify-content: flex-end;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+    .page .last_minute_offers .mw .cont{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .page .last_minute_offers .mw .top_cont .now_active_offer p {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: right;
+        -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #fff
+    }
+
+    .page .last_minute_offers .mw .top_cont .now_active_offer .num {
+        width: 50px;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-left: 10px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 130%;
+        text-align: center;
+        -webkit-font-feature-settings: 'pnum' on, 'lnum' on;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+        color: #fff;
+        z-index: 2;
+        position: relative
+    }
+
+    .page .last_minute_offers .mw .top_cont .now_active_offer .num:after {
+        content: '';
+        background: url("/assets/home/fire-2f4d8e261ef77985224f95502dab6763e548f555d79ca52213c15a69b43a3a74.svg") no-repeat center center/100% 100%;
+        width: 100%;
+        height: 65px;
+        position: absolute;
+        top: -35px;
+        z-index: -1
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-right: 10px;
+        margin: 0 10px 20px;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: calc(50% - 10px)
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .channel_info {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        min-width: auto;
+        width: 100%
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .channel_info .name {
+        margin-right: 0
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .channel_info ul {
+        margin-top: 23px;
+        margin-left: 40px
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .center_cont {
+        padding: 26px 0
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .center_cont .accommodation {
+        margin-bottom: 10px
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        min-width: auto;
+        border-top: 1px solid #EAEFFC;
+        border-left: 0;
+        height: 100%;
+        padding-top: 26px
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side .price {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side .price .h5 {
+        text-align: left;
+        padding-bottom: 0
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side .price .old_price {
+        font-size: 14px;
+        padding: 0 18px
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side .price .discount {
+        font-size: 18px;
+        line-height: 90%;
+        padding: 6px;
+        margin-top: 0
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side .line {
+        margin-left: 0;
+        margin-top: 15px;
+        padding-bottom: 10px
+    }
+
+    .page .last_minute_offers .mw .cont .hot_offer_block .r_side .line .until_the_end {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center
+    }
+
+    .page .last_minute_offers .mw .btn_view_all_offers {
+        width: 100%
+    }
+
+    .page .last_minute_offers .mw .btn_view_all_offers .btn_m {
+        background-color: #FBB040;
+        max-width: 360px;
+        width: 100%
+    }
+
+    .page .last_minute_offers .mw .btn_view_all_offers .btn_m:hover {
+        color: #111
+    }
+
+    .page .last_minute_offers .mw .btn_view_all_offers .btn_m:after {
+        background-color: #fff
+    }
+}
+
+@media(max-width:768px){
+    .page .last_minute_offers .mw .cont .hot_offer_block{
+        max-width: unset;
+    }
+}
+
+.main-pricing-cont{
+    margin-top: 150px;
+}
+
+.blogger-pricing{
+    margin-top: 60px;
+}
+
+.Footer_contactInfo__xcwwR {
+    display: flex;
+    gap: 16px
+}
+
+
+.Footer_contactInfoItem__K8_LH {
+    background: #13263c;
+    padding: 24px 16px;
+    border-radius: 16px;
+    flex: 1;
+    display: flex;
+    gap: 16px;
+    flex-direction: column
+}
+
+.Footer_contactInfoItem__K8_LH:not(:first-child),.Footer_media__RvbXP {
+    justify-content: space-between
+}
+
+.Footer_media__RvbXP {
+    align-items: flex-start
+}
+
+.Footer_mediaIcons__fc693 {
+    display: flex;
+    gap: 16px;
+    align-items: center
+}
+
+.Footer_mediaIconsItem__Ig8Xa {
+    width: 24px;
+    height: 24px
+}
+
+.Footer_iconContainer__HXqTd img {
+    margin-right: 8px
+}
+
+.Footer_news__Kv7Q4 {
+    width: 65%
+}
+
+.Footer_socialIconsContainer__NjE4O {
+    width: 100%
+}
+
+.Footer_requisites__Rl39j {
+    white-space: pre
+}
+
+.Footer_requisitesIconsItem__P0mlV {
+    position: relative;
+    bottom: 1px
+}
+
+@media (max-width: 992px) {
+    .Footer_footer__TUWgh {
+        margin-top:0
+    }
+
+    .Footer_title__2poeg {
+        margin-bottom: 16px
+    }
+
+    .Footer_numberInfo__bvW6Q {
+        margin-bottom: 24px
+    }
+
+    .Footer_numberInfo__bvW6Q p {
+        text-align: left
+    }
+
+    .Footer_bottom__hTiid {
+        padding-top: 24px
+    }
+
+    .Footer_rules__xcsxh {
+        flex-direction: column
+    }
+
+    .Footer_contactInfo__xcwwR {
+        display: flex;
+        flex-direction: column;
+        gap: 24px
+    }
+
+    .Footer_contactInfoItem__K8_LH {
+        background: #13263c;
+        padding: 16px;
+        border-radius: 16px;
+        flex: 1;
+        display: flex;
+        gap: 12px
+    }
+
+    .Footer_gray-span__5FBPH,.Footer_news__Kv7Q4 {
+        display: none
+    }
+
+    .Footer_mediaIcons__fc693 a {
+        line-height: 0
+    }
+
+    .Footer_desktopBreak__SL8Nk {
+        display: none
+    }
+}
+
+.Footer_socialIconsContainer__NjE4O{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.Footer_iconContainer__HXqTd{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+.Footer_iconContainer__HXqTd p{
+    margin-bottom: 0;
+}
+.font-head-small {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0;
+    text-align: left;
+}
+.Footer_contactInfo__xcwwR *{
+    color: #fff;
+}
+.Footer_contactInfo__xcwwR *:not(.font-head-small){
+    color: rgba(255,255,255,0.8);
+}
+
+.iti input.iti__tel-input, .iti input.iti__tel-input[type=text], .iti input.iti__tel-input[type=tel]{
+    width: 100% !important;
+}
+
+
+.iti.iti--allow-dropdown{
+    width: 100%;
+}
+
+.form-control.form-control-solid{
+    border-color: var(--bs-gray-400);
+}
+
+.form-control.form-control-solid[readonly]{
+    border-color:var(--bs-gray-200) ;
+    background-color: var(--bs-gray-200);
+}
+
+.password-show .bi{
+    font-size: 18px;
+}
+
+.contact-platform .select2-container {
+    height: 52px;
+}
