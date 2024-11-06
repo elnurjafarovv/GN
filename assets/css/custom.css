@@ -1419,3 +1419,6 @@ margin-bottom: 80px;
 .contact-platform .select2-container {
     height: 52px;
 }
+.fv-plugins-message-container{
+    position: absolute;
+}
