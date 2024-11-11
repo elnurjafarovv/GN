@@ -88,38 +88,58 @@
                      <form action="" class="account-specify-form w-100" id="account-verify-form">
                         <!--begin::Wrapper-->
                         <div class="w-100">
-                            <div class="pb-10 pb-lg-15">
-                            <!--begin::Title-->
-                            <h2 class="fw-bold d-flex align-items-center text-gray-900">Instagram
-                            </h2>
-                            <!--end::Title-->
-                            </div>
-                            <div class="fv-row mb-10 fv-plugins-icon-container">
-                            <!--begin::Label-->
-                            <label class="fs-6 fw-semibold form-label required">Enter your username</label>
-                            <!--end::Label-->
-                            <!--begin::Input-->
-                            <input name="text" class="form-control form-control-lg form-control-solid account-username-input" placeholder="@username">
-                            <!--end::Input-->
-                            <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
-                            </div>
-                            <!--end::Wrapper-->
-                            <div class="account-specify-buttons">
-                            <a href="../../GN-files/registration/specify-account.html" class="btn btn-lg btn-light-primary me-3" >
-                            <i class="ki-duotone ki-arrow-left fs-4 me-1">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            </i>Previous
-                            </a>
-                            <button type="button" id="continueButton" class="account-specify-submit disabled btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_1">Continue 
-                            <i class="ki-duotone ki-arrow-right fs-4 ms-1">
-                            <span class="path1"></span>
-                            <span class="path2"></span>
-                            </i></button>
-                            </div>
+                           <div class="pb-10 pb-lg-15">
+                              <!--begin::Title-->
+                              <h2 class="fw-bold  fs-2x d-flex align-items-center text-gray-900">Instagram
+                              </h2>
+                              <!--end::Title-->
+                              <div class="mt-10">
+                                 <!--begin::Title-->
+                                 <p class="text-gray-800 fs-2  w-bolder mb-2">Add the word Perfluence to your profile description to confirm that you are the owner.</p>
+                                 <!--end::Title-->
+                                 <!--begin::Text-->
+                                 <p class="fw-semibold fs-5 text-gray-600 mb-2">After successful registration, you can return the header description as it was.</p>
+                                 <!--end::Text-->
+                              </div>
+                              <div class="d-flex align-items-center gap-2 gap-lg-3 mt-5">
+                                 <button type="button" class="btn btn-outline show_example  btn-outline-success btn-active-light-success">See example</button>
+                                 <button type="button" class="btn btn-outline btn-copy-tag btn-outline-success btn-active-light-success" 
+                                    data-bs-toggle="tooltip" data-tag="example tag" data-bs-dismiss="click" data-bs-placement="top" 
+                                    data-copied-text="Copied" title="example tag" onclick="copyTag(this)">
+                                 Copy tag
+                                 </button>
+                              </div>
+                              <div class="tag-exampple-image">
+                                 <a href="https://static.perfluence.net/images/captions/perfluence/ig.png?v=2" data-fslightbox="image">
+                                 <img src="https://static.perfluence.net/images/captions/perfluence/ig.png?v=2"  alt=""></a>
+                              </div>
+                           </div>
+                           <div class="fv-row mb-10 fv-plugins-icon-container">
+                              <!--begin::Label-->
+                              <label class="fs-6 fw-semibold form-label required">Enter your username</label>
+                              <!--end::Label-->
+                              <!--begin::Input-->
+                              <input name="text" class="form-control form-control-lg form-control-solid account-username-input" placeholder="@username">
+                              <!--end::Input-->
+                              <div class="fv-plugins-message-container fv-plugins-message-container--enabled invalid-feedback"></div>
+                           </div>
+                           <!--end::Wrapper-->
+                           <div class="account-specify-buttons">
+                              <a href="../../GN-files/registration/specify-account.html" class="btn btn-lg btn-light-primary me-3" >
+                              <i class="ki-duotone ki-arrow-left fs-4 me-1">
+                              <span class="path1"></span>
+                              <span class="path2"></span>
+                              </i>Previous
+                              </a>
+                              <button type="button" id="continueButton" class="account-specify-submit disabled btn btn-lg btn-primary" data-bs-toggle="modal" data-bs-target="#kt_modal_1">Continue 
+                              <i class="ki-duotone ki-arrow-right fs-4 ms-1">
+                              <span class="path1"></span>
+                              <span class="path2"></span>
+                              </i></button>
+                           </div>
                         </div>
                         <!--end::Step 1-->
-                        </form>
+                     </form>
                   </div>
                   <!--end::Wrapper-->
                </div>
@@ -130,29 +150,26 @@
          <!--end::Authentication - Multi-steps-->
       </div>
       <div class="modal fade" tabindex="-1" id="kt_modal_1">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h3 class="modal-title">Подключение аккаунта</h3>
-
-                <!--begin::Close-->
-                <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
-                    <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
-                </div>
-                <!--end::Close-->
+         <div class="modal-dialog">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h3 class="modal-title">Подключение аккаунта</h3>
+                  <!--begin::Close-->
+                  <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                     <i class="ki-duotone ki-cross fs-1"><span class="path1"></span><span class="path2"></span></i>
+                  </div>
+                  <!--end::Close-->
+               </div>
+               <div class="modal-body">
+                  <p class="account-verify-popup-text">Are you sure you want to connect account <span class="username-display"></span>?</p>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                  <button type="button" data-form="#account-verify-form" class="btn btn-primary popup-form-submit">Save changes</button>
+               </div>
             </div>
-
-            <div class="modal-body">
-                <p class="account-verify-popup-text">Are you sure you want to connect account <span class="username-display"></span>?</p>
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
-                <button type="button" data-form="#account-verify-form" class="btn btn-primary popup-form-submit">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
+         </div>
+      </div>
       <!--end::Root-->
       <!--begin::Javascript-->
       <script>var hostUrl = "assets/";</script>
@@ -162,6 +179,7 @@
       <!--end::Global Javascript Bundle-->
       <!--begin::Custom Javascript(used for this page only)-->
       <script src="assets/js/custom/utilities/modals/create-account.js"></script>
+      <script src="assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
       <script src="assets/js/custom.js"></script>
       <!--end::Custom Javascript-->
       <!--end::Javascript-->

@@ -21,3 +21,27 @@ $(document).ready(function() {
         maximumSelectionLength: 3
     });
 });
+
+function copyTag(button) {
+    // Get the tag value
+    const tag = button.getAttribute('data-tag');
+    const copiedText = button.getAttribute('data-copied-text');
+    const originalText = button.textContent;
+
+    // Copy to clipboard
+    navigator.clipboard.writeText(tag).then(() => {
+        // Change button text to copied text
+        button.textContent = copiedText;
+
+        // Revert back after 3 seconds
+        setTimeout(() => {
+            button.textContent = originalText;
+        }, 3000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+
+$('.show_example').click(function(){
+    $('.tag-exampple-image').fadeToggle();
+})
