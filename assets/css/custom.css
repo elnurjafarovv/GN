@@ -1513,9 +1513,37 @@ margin-bottom: 80px;
 }
 
 .tag-exampple-image{
-    max-width: 500px;
+    width: 500px;
     margin-top: 16px;
     display: none;
+    position: relative;
+}
+
+.tag-badge-on-image{
+    color: #fff;
+    background: #1B84FF;
+    padding: 5px 12px;
+    line-height: 14px;
+    font-size: 14px;
+    position: absolute;
+    z-index: 1;
+    border-radius: 4px;
+    min-width: 118px;
+}
+
+.tag-badge-on-image-instagram{
+    left: 172px;
+    bottom: 102px;
+}
+
+.tag-badge-on-image-telegram{
+    left: 196px;
+    bottom: 26px;
+    padding: 8px 12px;
+}
+.tag-badge-on-image-youtube{
+    left: 208px;
+    bottom: 38px;
 }
 
 .tag-exampple-image a{
@@ -1530,4 +1558,35 @@ margin-bottom: 80px;
 
 .tag-exampple-image img:hover{
     border: 1px dashed rgba(0, 0, 0,.3);
+}
+
+
+@media(max-width:600px){
+    .tag-badge-on-image-instagram{
+        left: 103px;
+        bottom: 60px;
+    }
+    .tag-badge-on-image-youtube{
+        left: 125px;
+        bottom: 22px;
+    }
+    .tag-exampple-image{
+        width: 300px;
+    }
+    .tag-badge-on-image {
+        color: #fff;
+        background: #1B84FF;
+        padding: 3px 10px;
+        padding-bottom: 4px;
+        line-height: 10px;
+        font-size: 10px;
+        position: absolute;
+        z-index: 1;
+        min-width: 86px;
+    }
+    .tag-badge-on-image-telegram {
+        left: 118px;
+        bottom: 14px;
+        padding: 6px 12px ;
+    }
 }
