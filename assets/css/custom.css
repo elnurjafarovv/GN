@@ -1590,3 +1590,414 @@ margin-bottom: 80px;
         padding: 6px 12px ;
     }
 }
+.account_selector{
+    width: 400px;
+}
+
+.account_selector img[src="null"]{
+    display: none;
+}
+.select2-container img[src="null"]{
+    display: none;
+}
+.grid-selector{
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.grid-selector button{
+    background-color: transparent;
+    border: 0;
+    opacity: .5;
+}
+
+.grid-selector button.active{
+    opacity: 1;
+}
+
+.request-card .card-title{
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0,.1);
+    width: 100%;
+}
+.request_card_title span{
+    margin-left: 4px;
+    font-weight: 400;
+}
+.card_velvet {
+    background: #7b6fec;
+    box-shadow: 0 4px 4px 0 rgba(123,111,236,.16);
+    border-radius: 36px;
+    display: flex;
+    column-gap: 40px;
+}
+
+.card_velvet-light {
+    background: #edeefe
+}
+.p-50 {
+    padding: 50px;
+}
+.info__leftside {
+    position: relative;
+}
+.mb-64 {
+    margin-bottom: 64px;
+}
+.h2-48, .h2-white {
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.h2-white {
+    color: #fff;
+    font-size: 46px;
+    line-height: 120%;
+}
+.info__leftside .btn {
+    width: 350px;
+}
+.btn_secondary {
+    background-color: #fff;
+    color: #7b6fec !important;
+}
+.info a.mobile {
+    display: none;
+    width: 100%;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.flex-container.col-2>.flex-item {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: calc(50% - 60px);
+}
+.p-30 {
+    padding: 30px;
+}
+.card_white {
+    background: #fff;
+    display: flex;
+}
+.info__rightside .flex-item:first-child .svg-container svg {
+    max-width: 130px;
+}
+.info__rightside .flex-item .svg-container svg {
+    width: 100%;
+}
+.info__card {
+    position: relative;
+    overflow: hidden;
+    z-index: 4;
+    width: 100%;
+}
+.card_outlined, .card_outlined_2 {
+    border: 1px solid #b9bffa;
+}
+.flex-item>div{
+    border-radius: 30px;
+}
+.info__card__img.img_prize {
+    max-width: 300px;
+    right: -118px;
+    top: -24.6px;
+}
+.info__card{
+    display: flex;
+}
+.card_white {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-subtitle {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.info__card__img.img_chat {
+    right: -59px;
+    top: -53px;
+}
+.info__card__img {
+    width: 313px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.text-white {
+    color: #fff;
+}
+
+.img, .w-100 {
+    max-width: 100%;
+}
+.img {
+    height: auto;
+}
+.info__rightside .flex-item {
+    width: calc(50% - 15px );
+    height: 290px;
+}
+
+@media(max-width:1400px){
+    .h2-white{
+        font-size: 30px;
+    }
+    .info__card__img{
+        width: 236px;
+    }
+    .text-subtitle{
+        font-size: 16px;
+    }
+
+    .info__rightside .flex-item:first-child .svg-container svg{
+        max-width: 100px;
+    }
+    .info__rightside .flex-item{
+        height: 240px;
+    }
+
+    .info__leftside .line-desktop{
+        width: 109px !important;
+        height: 34px !important;
+        position: absolute;
+        top: 267px !important;
+        right: -30px !important;
+    }
+    .info__card__img.img_prize {
+        max-width: 192px;
+        right: -46px;
+        top: -24.6px;
+    }
+
+    .flex-container{
+        gap: 16px;
+    }
+
+    .info__rightside .flex-item{
+        width: calc(50% - 8px);
+    }
+    .info__card,.card_white{
+        padding: 20px !important;
+    }
+}
+
+
+@media(max-width:991px){
+    .card_velvet{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+
+    .info__leftside .line-desktop{
+        display: none;
+    }
+    .info__leftside .btn{
+        display: none;
+    }
+
+    .h2-white{
+        margin-bottom: 40px;
+    }
+    .info a.mobile{
+        display: block;
+    }
+
+    .card_velvet{
+        padding: 20px;
+    }
+}
+
+@media(max-width:560px){
+    .h2-white{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    .info__rightside .flex-item:first-child .svg-container svg {
+        max-width: 75px;
+    }
+    .info__rightside .flex-item {
+        height: 140px;
+    }
+    .text-subtitle {
+        font-size: 14px;
+    }
+    .info__card__img {
+        width: 100px;
+    }
+    .info__card__img.img_chat {
+        right: -13px;
+        top: -13px;
+    }
+    .info__card__img.img_prize {
+        max-width: 192px;
+        right: -21px;
+        top: -11.6px;
+    }
+    .nn-section-container{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .card_velvet{
+        border-radius: 0 !important;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+section[data-astro-cid-4mvz6jbf] {
+    padding-top: 40px;
+    padding-bottom: 120px;
+}
+
+.section-why[data-astro-cid-4mvz6jbf] {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    row-gap: 1rem;
+    column-gap: 20px
+}
+
+@media (min-width: 576px) {
+   .section-why__item{
+    width: calc((100% - 40px) / 3);
+   }
+}
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-profit-slogan[data-astro-cid-4mvz6jbf]{
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .section-why[data-astro-cid-4mvz6jbf] {
+        grid-template-columns:repeat(auto-fit,minmax(min(100%,20rem),1fr))
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-why[data-astro-cid-4mvz6jbf] {
+        gap:1.25rem
+    }
+}
+
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    gap: clamp(.5rem,.25rem + 1.25vw,1.25rem);
+    align-items: center;
+    text-align: center
+}
+
+@media (min-width: 768px) {
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] {
+        flex-direction:row;
+        text-align: left
+    }
+}
+
+@media (min-width: 1280px) {
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] {
+        gap:1.25rem;
+        padding: 1.25rem
+    }
+}
+
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-image[data-astro-cid-4mvz6jbf] {
+    flex-shrink: 0
+}
+
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-image[data-astro-cid-4mvz6jbf] svg[data-astro-cid-4mvz6jbf] {
+    width: 45px;
+}
+.new-cards-section{
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+@media (min-width: 1280px) {
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-image[data-astro-cid-4mvz6jbf] svg[data-astro-cid-4mvz6jbf] {
+        width:5rem
+    }
+}
+
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-text[data-astro-cid-4mvz6jbf] {
+    display: grid;
+    gap: 0;
+    gap: clamp(0rem,-.208rem + 1.04vw,.625rem)
+}
+
+@media (min-width: 1280px) {
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-text[data-astro-cid-4mvz6jbf] {
+        gap:.625rem
+    }
+}
+
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-profit-slogan[data-astro-cid-4mvz6jbf] {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal
+}
+
+@media (min-width: 1280px) {
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-profit-slogan[data-astro-cid-4mvz6jbf] {
+        font-size:24px
+    }
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-profit-slogan[data-astro-cid-4mvz6jbf] {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal
+    }
+}
+
+.section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-description[data-astro-cid-4mvz6jbf] {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+    color: var(--Light-10, #204a74)
+}
+
+@media (min-width: 1280px) {
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf] .section-why__item-description[data-astro-cid-4mvz6jbf] {
+        font-size:1rem
+    }
+}
+
+@media (min-width: 1280px) {
+    .section .section__header {
+        gap: .3125rem;
+        text-align: center;
+    }
+}
+.section-why-title {
+    display: grid;
+    gap: .5rem;
+    margin-bottom: 48px !important;
+}
+
+@media(max-width:768px){
+    .section-why[data-astro-cid-4mvz6jbf] .section-why__item[data-astro-cid-4mvz6jbf]{
+        width: calc(50% - 10px);
+    }
+
+    .new-cards-section{
+        margin-top: 80px !important;
+        margin-bottom: 80px !important;
+    }
+    section[data-astro-cid-4mvz6jbf] {
+        padding-top: 0;
+        padding-bottom: 60px;
+    }
+}
