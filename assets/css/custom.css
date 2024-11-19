@@ -2006,3 +2006,71 @@ section[data-astro-cid-4mvz6jbf] {
         margin-bottom: 50px !important;
     }
 }
+
+.badge-with-icon{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    width: fit-content;
+    font-size: 15px;
+    line-height: 1;
+}
+
+.badge-with-icon i{
+    color: #fff;
+}
+
+.card-socials{
+    margin: 16px 0;
+    margin-bottom: 10px;
+}
+.card-badges span{
+    font-size: 15px;
+}
+.order-card-title{
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.card-social-list{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.card-social-list img{
+    width: 24px;
+    height: 24px;
+}
+.card-badges{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.card-topics ul{
+    padding-left: 16px;
+    list-style-type: circle;
+}
+.card-topics li{
+    margin-bottom: 5px;
+}
+
+.card-buttons{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 2;
+    bottom: 20px;
+    width: calc(100% - 4.5rem);
+   
+}
+
+.card-buttons a{
+    width: 100%;
+}
+
+.request-card .card-body{
+    position: relative;
+    padding-bottom: 130px !important;
+}

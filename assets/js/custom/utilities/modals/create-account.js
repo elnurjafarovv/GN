@@ -156,7 +156,7 @@ var KTCreateAccount = function () {
 			form,
 			{
 				fields: {
-					'account_name': {
+					'phone_number': {
 						validators: {
 							notEmpty: {
 								message: 'Phone number is required'
