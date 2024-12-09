@@ -461,7 +461,7 @@ Terms of use of the service</h3>
               <div class="btn_c">
                 <a class="btn_m js_open_modal_popup_reg" data-url="/hot_orders?id=226626" href="#popup_sign_up">Купить сейчас</a>
               </div>
-              <div class="until_the_end end_time">
+              <div class="until_the_end end_time" data-target="10/12/2024">
                 <p class="timer">осталось <span class="time title_timer">
                     <span class="hour">1</span>
                     <span>:</span>
@@ -1345,10 +1345,48 @@ Terms of use of the service</h3>
 		<!--end::Vendors Javascript-->
 		<!--begin::Custom Javascript(used for this page only)-->
 		<script src="assets/js/custom/landing.js"></script>
-		<script src="assets/js/custom.js"></script>
+		<script src="../GN/assets/js/custom.js"></script>
 		<script src="assets/js/custom/pages/pricing/general.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
+		<script>
+			
+document.addEventListener('DOMContentLoaded', function () {
+  const countdownElements = document.querySelectorAll('.until_the_end');
+
+  countdownElements.forEach((element) => {
+    const targetDate = new Date(element.getAttribute('data-target'));
+
+    if (isNaN(targetDate)) {
+      console.error(`Invalid date format in: ${element}`);
+      return;
+    }
+
+    function updateCountdown() {
+      const now = new Date();
+      const difference = targetDate - now;
+
+      if (difference <= 0) {
+        element.querySelector('.hour').textContent = '00';
+        element.querySelector('.minute').textContent = '00';
+        element.querySelector('.second').textContent = '00';
+        clearInterval(interval);
+        return;
+      }
+
+      const hours = Math.floor(difference / (1000 * 60 * 60));
+      const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+      element.querySelector('.hour').textContent = hours.toString().padStart(2, '0');
+      element.querySelector('.minute').textContent = minutes.toString().padStart(2, '0');
+      element.querySelector('.second').textContent = seconds.toString().padStart(2, '0');
+    }
+
+    updateCountdown(); // Run immediately
+    const interval = setInterval(updateCountdown, 1000);
+  });
+});</script>
 	</body>
 	<!--end::Body-->
 </html>

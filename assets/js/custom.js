@@ -87,131 +87,167 @@ $(document).ready(function () {
 
  
   document.addEventListener("DOMContentLoaded", function () {
-      const form = document.querySelector(".valid-form");
-      const submitButton = form.querySelector("button[type='submit']");
+    if(document.querySelector(".valid-form")){
+        const form = document.querySelector(".valid-form");
+        const submitButton = form.querySelector("button[type='submit']");
+        
+        function validateForm() {
+            let hasErrors = false;
+    
+            form.querySelectorAll(".required").forEach((group) => {
+                const input = group.querySelector(".form-control");
+                if (input) {
+                    if (input.value.trim() === "") {
+                        group.classList.add("has-error");
+                        hasErrors = true;
+                    } else {
+                        group.classList.remove("has-error");
+                    }
+                }
+            });
+    
+            // Disable submit button if there are errors
+            if (submitButton) {
+                submitButton.disabled = hasErrors;
+            }
+        }
+    
+        // Add event listener to validate inputs on typing
+        form.querySelectorAll(".form-control").forEach((input) => {
+            input.addEventListener("input", () => {
+                const group = input.closest(".required");
+                if (group) {
+                    if (input.value.trim() === "") {
+                        group.classList.add("has-error");
+                    } else {
+                        group.classList.remove("has-error");
+                    }
+                }
+                validateForm();
+            });
+        });
+    
+        // Remove 'disabled' attribute when 'get_code' is clicked
+        const getCodeButton = document.getElementById("get_code");
+        if (getCodeButton) {
+            getCodeButton.addEventListener("click", () => {
+                const relatedInput = getCodeButton.closest(".input-group").querySelector(".form-control");
+                if (relatedInput) {
+                    relatedInput.removeAttribute("disabled");
+                    relatedInput.focus();
+                }
+            });
+        }
+    
+        // Initial validation
+        validateForm();
+    }
       
-      function validateForm() {
-          let hasErrors = false;
-  
-          form.querySelectorAll(".required").forEach((group) => {
-              const input = group.querySelector(".form-control");
-              if (input) {
-                  if (input.value.trim() === "") {
-                      group.classList.add("has-error");
-                      hasErrors = true;
-                  } else {
-                      group.classList.remove("has-error");
-                  }
-              }
-          });
-  
-          // Disable submit button if there are errors
-          if (submitButton) {
-              submitButton.disabled = hasErrors;
-          }
-      }
-  
-      // Add event listener to validate inputs on typing
-      form.querySelectorAll(".form-control").forEach((input) => {
-          input.addEventListener("input", () => {
-              const group = input.closest(".required");
-              if (group) {
-                  if (input.value.trim() === "") {
-                      group.classList.add("has-error");
-                  } else {
-                      group.classList.remove("has-error");
-                  }
-              }
-              validateForm();
-          });
-      });
-  
-      // Remove 'disabled' attribute when 'get_code' is clicked
-      const getCodeButton = document.getElementById("get_code");
-      if (getCodeButton) {
-          getCodeButton.addEventListener("click", () => {
-              const relatedInput = getCodeButton.closest(".input-group").querySelector(".form-control");
-              if (relatedInput) {
-                  relatedInput.removeAttribute("disabled");
-                  relatedInput.focus();
-              }
-          });
-      }
-  
-      // Initial validation
-      validateForm();
   });
-
-  document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector(".change_password_form");
-    const inputs = form.querySelectorAll("input");
-    const submitButton = form.querySelector('button[type="submit"]');
-
-    // Helper function to check password matching
-    const checkPasswordsMatch = () => {
-        const newPassword = form.querySelector('input[name="new_password"]').value.trim();
-        const repeatPassword = form.querySelector('input[name="repeat_password"]').value.trim();
-        const notMatchingFeedback = form.querySelector(".invalid-feedback.not-matching");
-        const emptyRepeatPasswordFeedback = form.querySelector(".invalid-feedback.empty-repeat-password");
-
-        // Reset feedback
-        notMatchingFeedback.style.display = "none";
-        emptyRepeatPasswordFeedback.style.display = "none";
-
-        if (!repeatPassword) {
-            emptyRepeatPasswordFeedback.style.display = "block";
-            return false;
-        }
-
-        if (newPassword !== repeatPassword) {
-            notMatchingFeedback.style.display = "block";
-            return false;
-        }
-
-        return true;
-    };
-
-    // Main validation function
-    const validateForm = () => {
-        let isValid = true;
-
-        inputs.forEach(input => {
-            const value = input.value.trim();
-            const feedback = input.closest(".fv-row").querySelector(".invalid-feedback");
-
-            // Toggle feedback visibility
-            if (!value) {
-                feedback.style.display = "block";
+if(document.querySelector(".change_password_form")){
+    document.addEventListener("DOMContentLoaded", () => {
+        const form = document.querySelector(".change_password_form");
+        const inputs = form.querySelectorAll("input");
+        const submitButton = form.querySelector('button[type="submit"]');
+    
+        // Helper function to check password matching
+        const checkPasswordsMatch = () => {
+            const newPassword = form.querySelector('input[name="new_password"]').value.trim();
+            const repeatPassword = form.querySelector('input[name="repeat_password"]').value.trim();
+            const notMatchingFeedback = form.querySelector(".invalid-feedback.not-matching");
+            const emptyRepeatPasswordFeedback = form.querySelector(".invalid-feedback.empty-repeat-password");
+    
+            // Reset feedback
+            notMatchingFeedback.style.display = "none";
+            emptyRepeatPasswordFeedback.style.display = "none";
+    
+            if (!repeatPassword) {
+                emptyRepeatPasswordFeedback.style.display = "block";
+                return false;
+            }
+    
+            if (newPassword !== repeatPassword) {
+                notMatchingFeedback.style.display = "block";
+                return false;
+            }
+    
+            return true;
+        };
+    
+        // Main validation function
+        const validateForm = () => {
+            let isValid = true;
+    
+            inputs.forEach(input => {
+                const value = input.value.trim();
+                const feedback = input.closest(".fv-row").querySelector(".invalid-feedback");
+    
+                // Toggle feedback visibility
+                if (!value) {
+                    feedback.style.display = "block";
+                    isValid = false;
+                } else {
+                    feedback.style.display = "none";
+                }
+            });
+    
+            // Check password matching separately
+            if (!checkPasswordsMatch()) {
                 isValid = false;
-            } else {
-                feedback.style.display = "none";
+            }
+    
+            // Enable or disable the submit button based on form validity
+            submitButton.disabled = !isValid;
+        };
+    
+        // Add input event listeners to validate in real-time
+        inputs.forEach(input => {
+            input.addEventListener("input", () => {
+                validateForm();
+            });
+        });
+    
+        // Initial validation on load
+        validateForm();
+    
+        // Prevent form submission if invalid
+        form.addEventListener("submit", (event) => {
+            validateForm();
+            if (submitButton.disabled) {
+                event.preventDefault();
             }
         });
-
-        // Check password matching separately
-        if (!checkPasswordsMatch()) {
-            isValid = false;
-        }
-
-        // Enable or disable the submit button based on form validity
-        submitButton.disabled = !isValid;
-    };
-
-    // Add input event listeners to validate in real-time
-    inputs.forEach(input => {
-        input.addEventListener("input", () => {
-            validateForm();
-        });
     });
+}
 
-    // Initial validation on load
-    validateForm();
 
-    // Prevent form submission if invalid
-    form.addEventListener("submit", (event) => {
-        validateForm();
-        if (submitButton.disabled) {
-            event.preventDefault();
+$("#orders_table").DataTable();
+if(document.querySelector('#kt_dropzonejs_example_1')){
+    var myDropzone = new Dropzone("#kt_dropzonejs_example_1", {
+        url: "https://keenthemes.com/scripts/void.php", // Set the url for your upload script location
+        paramName: "file", // The name that will be used to transfer the file
+        maxFiles: 10,
+        maxFilesize: 10, // MB
+        addRemoveLinks: true,
+        accept: function(file, done) {
+            if (file.name == "wow.jpg") {
+                done("Naha, you don't.");
+            } else {
+                done();
+            }
         }
     });
+}
+
+$("#range_date_picker_order").daterangepicker();
+
+
+
+
+Inputmask({
+    "mask" : "9999 9999 9999 9999"
+}).mask("#card_number");
+
+$(".datepick").flatpickr({
+ 
 });
