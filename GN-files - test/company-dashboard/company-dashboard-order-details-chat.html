@@ -2161,10 +2161,8 @@ License: For each use you must have a valid license purchased only from above li
 							<div id="kt_app_toolbar" class="app-toolbar py-3 py-lg-6">
 								<!--begin::Toolbar container-->
 								<div id="kt_app_content_container" class="app-container container-xxl">
-									
-                                   <div class="company-order-details-cont card">
-                                    <!--end::Card header-->
-                                        <div class="card-body">
+									<div class="card mt-5 mb-5">
+										<div class="card-body">
                                             <div class="acccount-filter-btns order-detail-links  company-orders-filter">
                                                 <a href="../../GN-files/company-dashboard/company-dashboard-order-details.html" class="btn  btn-secondary"> <i class="fa-solid fa-user"></i> Information</a>
                                                 <a href="../../GN-files/company-dashboard/company-dashboard-order-details-chat.html" class="btn  btn-success"><i class="fa-solid fa-comment"></i> Chat</a>
@@ -2173,24 +2171,27 @@ License: For each use you must have a valid license purchased only from above li
                                                 <a href="../../GN-files/company-dashboard/company-dashboard-order-details-statistics.html" class="btn  btn-secondary "> <i class="fa-solid fa-chart-simple"></i> statistics</a>
 												<a href="../../GN-files/company-dashboard/company-dashboard-order-details-delivery.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Доставка</a>
                                                 <a href="../../GN-files/company-dashboard/company-dashboard-order-details-product-information.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Информация о продукте</a>
+												<a href="../../GN-files/company-dashboard/company-dashboard-order-details-product-information.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Информация о продукте</a>
                                             </div>    
-                                        </div>
-                                        <div class="card-body">
-                                            <div class="company-blogger-detail-container">
-                                                <div class="company-blogger-detail-left">
-                                                    <div class="d-flex flex-column text-center mb-9 ">
+                                        </div></div>
+                                   <div class="company-order-details-cont">
+                                    <!--end::Card header-->
+                                        <div class="card company-blogger-detail-left">
+											<div class="card-body">
+												<div class=" company-blogger-detail-left-child">
+                                                    <div class="d-flex flex-column text-center mb-9 px-9">
 														<!--begin::Photo-->
-														<div class="symbol  mb-4">
-															<img src="../assets/media/avatars/300-14.jpg" class="" alt="">
+														<div class="symbol symbol-80px symbol-lg-150px mb-4">
+															<img src="../assets/media/avatars/300-3.jpg" class="" alt="">
 														</div>
 														<!--end::Photo-->
 														<!--begin::Info-->
 														<div class="text-center">
 															<!--begin::Name-->
-															<p class="text-gray-800 fw-bold text-hover-primary fs-1">Jerry Kane</p>
+															<a href="pages/user-profile/overview.html" class="text-gray-800 fw-bold text-hover-primary fs-4">Jerry Kane</a>
 															<!--end::Name-->
 															<!--begin::Position-->
-															<span class="text-muted d-block fw-semibold fs-2"><i class="bi bi-geo-alt fs-1"></i> Moscow, Russia</span>
+															<span class="text-muted d-block fw-semibold">Russia, Moscow</span>
 															<!--end::Position-->
 														</div>
 														<!--end::Info-->
@@ -2200,7 +2201,11 @@ License: For each use you must have a valid license purchased only from above li
 														Тех Поддержка <br> База знаний 
 													</a>
                                                 </div>
-                                                <div class="company-blogger-detail-right company-blogger-detail-right-reviews">
+											</div>
+										</div>
+                                        <div class="card company-blogger-detail-right">
+											<div class="card-body">
+												<div class="company-blogger-detail-righ-child company-blogger-detail-right-reviews">
 														
                                                         <div class="company-blogger-detail-right-title mb-10">
 															<div class="company-blogger-detail-right-title-left">
@@ -2216,288 +2221,28 @@ License: For each use you must have a valid license purchased only from above li
 															
 														</div>
 														<div class="company-blogger-details-right-body">
-															<!--begin::Messenger-->
-                                                            <div class="card" id="kt_chat_messenger">
-                                                                
-                                                                <!--begin::Card body-->
-                                                                <div class="card-body" id="kt_chat_messenger_body">
-                                                                    <!--begin::Messages-->
-                                                                    <div class="scroll-y me-n5 pe-5 h-300px h-lg-auto" data-kt-element="messages" data-kt-scroll="true" data-kt-scroll-activate="{default: false, lg: true}" data-kt-scroll-max-height="auto" data-kt-scroll-dependencies="#kt_header, #kt_app_header, #kt_app_toolbar, #kt_toolbar, #kt_footer, #kt_app_footer, #kt_chat_messenger_header, #kt_chat_messenger_footer" data-kt-scroll-wrappers="#kt_content, #kt_app_content, #kt_chat_messenger_body" data-kt-scroll-offset="5px">
-                                                                        <!--begin::Message(in)-->
-                                                                        <div class="d-flex justify-content-start mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-start">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-25.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="ms-3">
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
-                                                                                        <span class="text-muted fs-7 mb-1">2 mins</span>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">How likely are you to recommend our company to your friends and family ?</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(in)-->
-                                                                        <!--begin::Message(out)-->
-                                                                        <div class="d-flex justify-content-end mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-end">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="me-3">
-                                                                                        <span class="text-muted fs-7 mb-1">5 mins</span>
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary ms-1">You</a>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-1.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-primary text-gray-900 fw-semibold mw-lg-400px text-end" data-kt-element="message-text">Hey there, we’re just writing to let you know that you’ve been subscribed to a repository on GitHub.</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(out)-->
-                                                                        <!--begin::Message(in)-->
-                                                                        <div class="d-flex justify-content-start mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-start">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-25.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="ms-3">
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
-                                                                                        <span class="text-muted fs-7 mb-1">1 Hour</span>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">Ok, Understood!</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(in)-->
-                                                                        <!--begin::Message(out)-->
-                                                                        <div class="d-flex justify-content-end mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-end">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="me-3">
-                                                                                        <span class="text-muted fs-7 mb-1">2 Hours</span>
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary ms-1">You</a>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-1.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-primary text-gray-900 fw-semibold mw-lg-400px text-end" data-kt-element="message-text">You’ll receive notifications for all issues, pull requests!</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(out)-->
-                                                                        <!--begin::Message(in)-->
-                                                                        <div class="d-flex justify-content-start mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-start">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-25.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="ms-3">
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
-                                                                                        <span class="text-muted fs-7 mb-1">3 Hours</span>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">You can unwatch this repository immediately by clicking here: 
-                                                                                <a href="https://keenthemes.com">Keenthemes.com</a></div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(in)-->
-                                                                        <!--begin::Message(out)-->
-                                                                        <div class="d-flex justify-content-end mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-end">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="me-3">
-                                                                                        <span class="text-muted fs-7 mb-1">4 Hours</span>
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary ms-1">You</a>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-1.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-primary text-gray-900 fw-semibold mw-lg-400px text-end" data-kt-element="message-text">Most purchased Business courses during this sale!</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(out)-->
-                                                                        <!--begin::Message(in)-->
-                                                                        <div class="d-flex justify-content-start mb-10">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-start">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-25.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="ms-3">
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
-                                                                                        <span class="text-muted fs-7 mb-1">5 Hours</span>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">Company BBQ to celebrate the last quater achievements and goals. Food and drinks provided</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(in)-->
-                                                                        <!--begin::Message(template for out)-->
-                                                                        <div class="d-flex justify-content-end mb-10 d-none" data-kt-element="template-out">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-end">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="me-3">
-                                                                                        <span class="text-muted fs-7 mb-1">Just now</span>
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary ms-1">You</a>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-1.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-primary text-gray-900 fw-semibold mw-lg-400px text-end" data-kt-element="message-text"></div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(template for out)-->
-                                                                        <!--begin::Message(template for in)-->
-                                                                        <div class="d-flex justify-content-start mb-10 d-none" data-kt-element="template-in">
-                                                                            <!--begin::Wrapper-->
-                                                                            <div class="d-flex flex-column align-items-start">
-                                                                                <!--begin::User-->
-                                                                                <div class="d-flex align-items-center mb-2">
-                                                                                    <!--begin::Avatar-->
-                                                                                    <div class="symbol symbol-35px symbol-circle">
-                                                                                        <img alt="Pic" src="../assets/media/avatars/300-25.jpg" />
-                                                                                    </div>
-                                                                                    <!--end::Avatar-->
-                                                                                    <!--begin::Details-->
-                                                                                    <div class="ms-3">
-                                                                                        <a href="#" class="fs-5 fw-bold text-gray-900 text-hover-primary me-1">Brian Cox</a>
-                                                                                        <span class="text-muted fs-7 mb-1">Just now</span>
-                                                                                    </div>
-                                                                                    <!--end::Details-->
-                                                                                </div>
-                                                                                <!--end::User-->
-                                                                                <!--begin::Text-->
-                                                                                <div class="p-5 rounded bg-light-info text-gray-900 fw-semibold mw-lg-400px text-start" data-kt-element="message-text">Right before vacation season we have the next Big Deal for you.</div>
-                                                                                <!--end::Text-->
-                                                                            </div>
-                                                                            <!--end::Wrapper-->
-                                                                        </div>
-                                                                        <!--end::Message(template for in)-->
-                                                                    </div>
-                                                                    <!--end::Messages-->
-                                                                </div>
-                                                                <!--end::Card body-->
-                                                                <!--begin::Card footer-->
-                                                                <div class="card-footer pt-4" id="kt_chat_messenger_footer">
-                                                                    <!--begin::Input-->
-                                                                    <textarea class="form-control form-control-flush mb-3" rows="1" data-kt-element="input" placeholder="Type a message"></textarea>
-                                                                    <!--end::Input-->
-                                                                    <!--begin:Toolbar-->
-                                                                    <div class="d-flex flex-stack">
-                                                                        <!--begin::Actions-->
-                                                                        <div class="d-flex align-items-center me-2">
-                                                                            <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button" data-bs-toggle="tooltip" title="Coming soon">
-                                                                                <i class="ki-duotone ki-paper-clip fs-3"></i>
-                                                                            </button>
-                                                                            <button class="btn btn-sm btn-icon btn-active-light-primary me-1" type="button" data-bs-toggle="tooltip" title="Coming soon">
-                                                                                <i class="ki-duotone ki-exit-up fs-3">
-                                                                                    <span class="path1"></span>
-                                                                                    <span class="path2"></span>
-                                                                                </i>
-                                                                            </button>
-                                                                        </div>
-                                                                        <!--end::Actions-->
-                                                                        <!--begin::Send-->
-                                                                        <button class="btn btn-primary" type="button" data-kt-element="send">Send</button>
-                                                                        <!--end::Send-->
-                                                                    </div>
-                                                                    <!--end::Toolbar-->
-                                                                </div>
-                                                                <!--end::Card footer-->
-                                                            </div>
-                                                            <!--end::Messenger-->
+															<div class="chat-container">
+													
+																<div class="chat-body" id="chatBody">
+																<!-- Example messages -->
+																<div class="message received">Hello! How can I help you today?</div>
+																<div class="message sent">Hi! I have a question about your services.</div>
+																<div class="message received">Sure! Feel free to ask.</div>
+																
+																</div>
+																<div class="chat-footer">
+																<input type="text" id="messageInput" placeholder="Type a message" />
+																<input type="file" id="fileInput" hidden />
+																<button id="fileButton"><i class="fa-solid fa-paperclip" style="color: #fff"></i></button>
+																<button id="sendButton">Send</button>
+																</div>
+															</div>
 														</div>
 
 														
-														</div>
 												</div>
-                                            </div>
-                                        </div>
+											</div>	
+										</div>
                                     </div>
 									
 
@@ -2591,6 +2336,69 @@ License: For each use you must have a valid license purchased only from above li
         <script src="../assets/js/custom.js"></script>
 		<!--end::Custom Javascript-->
 		<!--end::Javascript-->
+		<script>
+			const messageInput = document.getElementById("messageInput");
+const chatBody = document.getElementById("chatBody");
+const sendButton = document.getElementById("sendButton");
+const fileInput = document.getElementById("fileInput");
+const fileButton = document.getElementById("fileButton");
+
+// Function to add a message to the chat
+function addMessage(content, type = "sent", isImage = false, fileName = "") {
+  const messageDiv = document.createElement("div");
+  messageDiv.classList.add("message", type);
+
+  if (isImage) {
+    const img = document.createElement("img");
+    img.src = content;
+    messageDiv.appendChild(img);
+  } else if (fileName) {
+    const attachmentDiv = document.createElement("div");
+    attachmentDiv.classList.add("attachment");
+
+    const icon = document.createElement("span");
+    icon.classList.add("fa-solid");
+    icon.textContent = "📎"; // Attachment icon
+
+    const fileText = document.createElement("span");
+    fileText.textContent = fileName;
+
+    attachmentDiv.appendChild(icon);
+    attachmentDiv.appendChild(fileText);
+    messageDiv.appendChild(attachmentDiv);
+  } else {
+    messageDiv.textContent = content;
+  }
+
+  chatBody.appendChild(messageDiv);
+  chatBody.scrollTop = chatBody.scrollHeight; // Auto-scroll to the latest message
+}
+
+// Handle text message sending
+sendButton.addEventListener("click", () => {
+  const message = messageInput.value.trim();
+  if (message) {
+    addMessage(message, "sent");
+    messageInput.value = "";
+  }
+});
+
+// Handle file uploads
+fileButton.addEventListener("click", () => fileInput.click());
+
+fileInput.addEventListener("change", () => {
+  const file = fileInput.files[0];
+  if (file) {
+    const reader = new FileReader();
+    reader.onload = () => {
+      const isImage = file.type.startsWith("image/");
+      addMessage(reader.result, "sent", isImage, file.name);
+    };
+    reader.readAsDataURL(file); // Convert file to base64 string
+    fileInput.value = ""; // Reset the file input
+  }
+});
+		</script>
 	</body>
 	<!--end::Body-->
 </html>
