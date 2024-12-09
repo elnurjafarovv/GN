@@ -2458,6 +2458,7 @@ section[data-astro-cid-4mvz6jbf] {
 
 .order-detail-links{
     justify-content: flex-start;
+    flex-wrap: wrap;
 }
 
 .order-detail-links a.disabled{
@@ -2475,9 +2476,10 @@ section[data-astro-cid-4mvz6jbf] {
     max-width: 600px;
 }
 
-.company-blogger-detail-right{
+.company-blogger-detail-right-child:has(.order-details-buttons){
     position: relative;
     padding-bottom: 100px;
+    min-height: 400px;
 }
 
 .order-details-buttons{
@@ -2538,7 +2540,8 @@ section[data-astro-cid-4mvz6jbf] {
 
 .company-order-details-cont{
     display: flex;
-    flex-direction: column;
+    align-items: flex-start;
+    column-gap: 16px;
 }
 
 
@@ -2550,7 +2553,11 @@ section[data-astro-cid-4mvz6jbf] {
     width: 250px;
     display: flex;
     column-gap: 50px;
-    min-height: 520px;
+    
+}
+.company-blogger-detail-left-child{
+    min-height: 400px;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -2575,8 +2582,9 @@ section[data-astro-cid-4mvz6jbf] {
 
 .company-blogger-detail-right{
     width: calc(100% - 250px);
-    padding-left: 32px;
+    padding-left: 12px;
 }
+
 
 .company-blogger-detail-right-title{
     display: flex;
@@ -2732,3 +2740,157 @@ section[data-astro-cid-4mvz6jbf] {
 .stat-video video{
     width: 100%;
 }
+
+@media(max-width:991px){
+    .company-order-details-cont {
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .company-blogger-detail-right{
+        width: 100%;
+        padding-left: 0;
+    }
+    .company-blogger-detail-left{
+        width: 100%;
+    }
+    .company-blogger-detail-left .symbol img{
+        width: 120px;
+    }
+    .company-blogger-detail-left-child{
+        min-height: unset;
+    }
+    .company-blogger-detail-right-child:has(.order-details-buttons){
+        min-height: unset;
+    }
+    .question_mark br {
+       display: none;
+    }
+    .question_mark .question-icon{
+        width: 20px;
+        height: 20px;
+    }
+    .question_mark .question-icon i{
+        font-size: 9px;
+    }
+    .company-blogger-detail-right-title-left{
+        flex-wrap: wrap;
+        row-gap: 8px;
+    }
+}
+
+@media(max-width:768px){
+    .account-list-header{
+        flex-direction: column;
+        row-gap: 12px;
+    }
+
+    .account-list-header .card-title{
+        width: 100%;
+    }
+    .account-list-header .card-title input{
+        width: 100% !important;
+    }
+    #kt_header_search_toggle{
+        display: none !important;
+    }
+    .account-list-header .card-toolbar{
+        width: 100%;
+    }
+    #orders_table tr td:nth-child(2),
+    #orders_table tr th:nth-child(2){
+        min-width: 140px;
+    }
+    .company-orders-filter{
+        flex-wrap: wrap;
+    }
+}
+
+.chat-container {
+    width: 100%;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chat-header {
+    background-color: var(--bs-primary);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .chat-body {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 30px;
+  }
+  
+  .chat-body .message {
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  
+  .message.sent {
+    align-self: flex-end;
+    background-color: var(--bs-primary);
+    color: #fff;
+  }
+  
+  .message.received {
+    align-self: flex-start;
+    background-color: #f1f1f1;
+    color: #000;
+  }
+  
+  .message img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  .chat-footer {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+  }
+  
+  .chat-footer input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .chat-footer button {
+    margin-left: 10px;
+    background-color: var(--bs-primary);
+    color: #fff;
+    white-space: nowrap;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #sendButton{
+    width: auto;
+    padding: 0 24px;
+    border-radius: 10px;
+  }
+  
+  .chat-footer button:hover {
+    background-color: var(--bs-primary);
+  }

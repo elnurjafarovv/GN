@@ -2165,17 +2165,16 @@ License: For each use you must have a valid license purchased only from above li
 										<div class="card-body">
                                             <div class="acccount-filter-btns order-detail-links  company-orders-filter">
                                                 <a href="../../GN-files/company-dashboard/company-dashboard-order-details.html" class="btn  btn-secondary"> <i class="fa-solid fa-user"></i> Information</a>
-                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-chat.html" class="btn btn-secondary"><i class="fa-solid fa-comment"></i> Chat</a>
-                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-media.html" class="btn  btn-secondary"> <i class="fa-solid fa-play"></i> Media</a>
-                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-payments.html" class="btn  btn-success"> <i class="fa-solid fa-money-bill"></i> Payments</a>
-                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-statistics.html" class="btn  btn-secondary"> <i class="fa-solid fa-chart-simple"></i> statistics</a>
-												<a href="../../GN-files/company-dashboard/company-dashboard-order-details-delivery.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Доставка</a>
+                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-chat.html" class="btn btn-secondary "><i class="fa-solid fa-comment"></i> Chat</a>
+                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-media.html" class="btn  btn-secondary "> <i class="fa-solid fa-play"></i> Media</a>
+                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-payments.html" class="btn  btn-secondary "> <i class="fa-solid fa-money-bill"></i> Payments</a>
+                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-statistics.html" class="btn  btn-secondary "> <i class="fa-solid fa-chart-simple"></i> statistics</a>
+                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-delivery.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Доставка</a>
                                                 <a href="../../GN-files/company-dashboard/company-dashboard-order-details-product-information.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Информация о продукте</a>
-												<a href="../../GN-files/company-dashboard/company-dashboard-order-details-product-information.html" class="btn   btn-secondary"> <i class="fa-solid fa-truck"></i> Информация о продукте</a>
+                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-place-information.html" class="btn   btn-success"> <i class="fa-solid fa-truck"></i> Информация о месте</a>
                                             </div>    
-                                        </div>
-										</div>
-                                   <div class="company-order-details-cont">
+                                        </div></div>
+                                   <div class="company-order-details-cont ">
                                     <!--end::Card header-->
 									<div class="card company-blogger-detail-left">
 	<div class="card-body">
@@ -2207,57 +2206,96 @@ License: For each use you must have a valid license purchased only from above li
 <div class="card company-blogger-detail-right">
 	<div class="card-body">
 		<div class="company-blogger-detail-right-child">
-														
+														<div class="company-blogger-detail-right-title">
+															<div class="company-blogger-detail-right-title-left">
+																<h3 class="text-gray-800 fs-1">Заказ No1</h3>
+															</div>
+															<div class="company-blogger-detail-right-title-right">
+																<span class="badge badge-light-warning"> Оплачено </span>
+															</div>
+															
+														</div>
 														<div class="company-blogger-details-right-body">
-                                                            <h3 class="text-gray-800 fs-1">Заказ No1</h3>
-                                                            <p class="text-gray-800 fs-3">Согласуйте формат и дату публикации</p>
+															
+															<div class="delivery-form mt-10">
+                                                           
+																<div class="fv-row mb-5">
+																	<!--end::Label-->
+																	<label class="form-label fs-4">Адрес</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="email" class="form-control" value="Москва, Тверская 5">
+																</div>
+																<div class="fv-row mb-5">
+																	<!--end::Label-->
+																	<label class="form-label fs-4">Время</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text" class="form-control" value="11:00 - 21:00">
+																</div>
+																<div class="fv-row mb-5">
+																	<!--end::Label-->
+																	<label class="form-label fs-4">Ссылка</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text" class="form-control " >
+																</div>
+                                                                <div class="fv-row mb-5">
+																	<!--end::Label-->
+																	<label class="form-label fs-4">Телефон для связи</label>
+																	<!--end::Label-->
+																	<!--begin::Input-->
+																	<input type="text" class="form-control " value="+7-925-008-08-08" >
+																</div>
+                                                                <div class="alert alert-primary d-flex align-items-center p-5 mb-10">
+                                                                    
 
-                                                            <h4 class="text-gray-800 fs-2 mb-5 mt-10">Формат</h4>
-                                                            <div class="company-order-info-radios">
-                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                    <input class="form-check-input" name="format" type="radio" checked value="Reels" id="flexRadioDefault"/>
-                                                                    <label class="form-check-label text-gray-800 fs-4" for="flexRadioDefault">
-                                                                        Reels
-                                                                    </label>
+                                                                    <!--begin::Wrapper-->
+                                                                    <div class="d-flex flex-column">
+                                                                       
+
+                                                                        <!--begin::Content-->
+                                                                        <span>Если для рекламы блогеру не нужны дополнительные данные, напиши в поле ниже "Данные не требуются"</span>
+                                                                        <!--end::Content-->
+                                                                    </div>
+                                                                    <!--end::Wrapper-->
                                                                 </div>
+                                                                <!--end::Alert-->
+                                                                <div class="fv-row mb-10">
+                                                                    <!--begin::Dropzone-->
+                                                                    <div class="dropzone" id="kt_dropzonejs_example_1">
+                                                                        <!--begin::Message-->
+                                                                        <div class="dz-message needsclick">
+                                                                            <i class="ki-duotone ki-file-up fs-3x text-primary"><span class="path1"></span><span class="path2"></span></i>
 
-                                                                <label class="form-check form-check-custom form-check-solid">
-                                                                    <input class="form-check-input" name="format" type="radio" value="Stories"/>
-                                                                    <span class="form-check-label">
-                                                                        Stories
-                                                                    </span>
-                                                                </label>
-
-                                                               
-                                                            </div>
-                                                            <h4 class="text-gray-800 fs-2 mb-5 mt-10">Дата </h4>
-                                                            <div class="company-order-info-radios">
-                                                                <div class="form-check form-check-custom form-check-solid">
-                                                                    <input class="form-check-input" type="radio" checked name="data" value="01.12" id="flexRadioDefault"/>
-                                                                    <label class="form-check-label text-gray-800 fs-4" for="flexRadioDefault">
-                                                                        01.12
-                                                                    </label>
+                                                                            <!--begin::Info-->
+                                                                            <div class="ms-4">
+                                                                                <h3 class="fs-5 fw-bold text-gray-900 mb-1">Drop files here or click to upload.</h3>
+                                                                                <span class="fs-7 fw-semibold text-gray-500">Upload up to 10 files</span>
+                                                                            </div>
+                                                                            <!--end::Info-->
+                                                                        </div>
+                                                                    </div>
+                                                                    <!--end::Dropzone-->
                                                                 </div>
+                                                                <!--end::Input group-->
+                                                                <div class="fv-row mb-10">
+															<!--end::Label-->
+															<label class="form-label fs-4">Дополнительные комментарии</label>
+															<!--end::Label-->
+															<!--begin::Input-->
+															<textarea name="large_description" class="form-control form-control-lg " rows="8">Перейди по ссылке. Введи логин и пароль. После входа, ты окажешься в Личном кабинете, где можешь управлять своим аккаунтом и просматривать доступные услуги.
+Важно создать пост, в котором ты расскажешь о своем опыте обращения к нам за юридическими услугами. Расскажи о том, как тебе понадобилась помощь с составлением договора. Продолжи рассказ об оперативности и качестве полученной юридической помощи. Упомяни, что благодаря нашей платформе все вопросы были решены быстро и легко. Рекламные материалы:
+Не забудь прикрепить рекламные файлы: лого и баннеры, которые мы предоставили. Это сделает твой контент более привлекательным и информативным.</textarea>
+															<!--end::Input-->
+														</div>
+																
+															</div>
+															
 
-                                                                <label class="form-check form-check-custom form-check-solid">
-                                                                    <input class="form-check-input" name="data" type="radio" value="03.12"/>
-                                                                    <span class="form-check-label">
-                                                                        03.12
-                                                                    </span>
-                                                                </label>
-                                                                <label class="form-check form-check-custom form-check-solid">
-                                                                    <input class="form-check-input" name="data" type="radio" value="05.12"/>
-                                                                    <span class="form-check-label">
-                                                                        05.12
-                                                                    </span>
-                                                                </label>
-
-                                                               
-                                                            </div>
-															<div class="order-details-buttons">
-                                                                <a href="../../GN-files/company-dashboard/company-dashboard-order-details-payments-step2.html"  class="btn btn-primary">Продолжить</a>
-                                                                
-                                                            </div>
+														<div class="order-details-buttons">
+															<button type="button" class="btn btn-primary">Отправить данные</button>
+														</div>
 														</div>
 												</div>
 	</div>
